@@ -22,7 +22,7 @@ float temp_y, temp2_y;
 color blue = color(70, 255, 255);
 color pink = color(203, 13, 73);
 color purple = color(86, 1, 95);
-int track = 7; // current track
+int track = 6; // current track
 
 // setup the sketch
 void setup() {
@@ -66,7 +66,7 @@ void draw() {
   // increase/decrease alpha value to make fade out slower/faster
   background(0);
   tint(255, 255, 255, 248);
-  image(fade, 0, 0);
+//  image(fade, 0, 0);
   noTint();
 
   // iterate through array of frequency bands

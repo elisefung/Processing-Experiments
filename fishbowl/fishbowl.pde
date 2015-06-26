@@ -35,25 +35,25 @@ void draw() {
   fill(147, 218, 219);
   arc(400, 320, 450, 430, 0, PI, OPEN);
 
-  // move and display food
-  for (int i = 0; i < dinner.size (); i++) {
-    Food food = dinner.get(i);
-    if (food.y >= fishbowlBottom) {
-      dinner.remove(food);
-    } else if (myFish.isEating(food)) {
-      println("Yum! The fish ate the food!");
-      dinner.remove(food);
-      myFish.grow();
-    } else {
-      food.move();
-      food.display();
-    }
-  }
-
   // move and display fish
   myFish.move();
   myFish.display();
-}
+
+  // move and display food
+//  for (int i = 0; i < dinner.size (); i++) {
+//    Food food = dinner.get(i);
+//    if (food.y >= fishbowlBottom) {
+//      dinner.remove(food);
+//    } else if (myFish.isEating(food)) {
+//      println("Yum! The fish ate the food!");
+//      dinner.remove(food);
+//      myFish.grow();
+//    } else {
+//      food.move();
+//      food.display();
+//    }
+//  }
+} 
 
 // mouseClicked(): add a new food when the user clicks inside the bowl
 void mouseClicked() {
